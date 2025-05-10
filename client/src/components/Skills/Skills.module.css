@@ -83,4 +83,12 @@
     .container h2{
         text-align: center;
     }
+    .imageContainer{
+        width: 60px;
+    height: 60px;
+
+    }
+    .imageContainer img {
+    width: 30px;
+}
 }

@@ -129,7 +129,10 @@
     .right{
         background-position: center;
         background-size: cover;
-        border-radius: 50%;
-        width: 50%;
+        height: 40vh;
+        width: 80vw;
+        background-image: url('/contact/pic.png');
+       
+        
     }
 }
