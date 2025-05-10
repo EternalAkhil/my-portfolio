@@ -21,6 +21,7 @@
     margin-top: 14px;
     display: flex;
     flex-direction: row;
+    
     flex-wrap: wrap;
     gap: 6px;
     list-style: none;
@@ -60,17 +61,17 @@
     font-size: 25px;
     font-weight: 400;
     border-radius: 50px;
-    background: var(--color-dark);
+    background: var(--color-primary);
     padding: 2px 22px;
 }
 
 .container div a {
-  
+  text-decoration: none;
     color: var(--color-text);
     font-size: 30px;
     font-weight: 400;
     border-radius: 10px;
-    background: transparent;
+    background: var(--color-dark);
     padding: 10px;
 }
 
@@ -82,11 +83,12 @@
     width: 100%;
     margin-top: 26px;
     display: flex;
-    justify-content: space-around;
+    gap: 1rem;
 }
 @media screen and (max-width:850px) {
     .container{
-        max-width: 90%;
+        max-width: 100%;
+
     }
 
     

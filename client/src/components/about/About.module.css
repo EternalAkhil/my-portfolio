@@ -6,6 +6,7 @@
     font-weight: 700;
     letter-spacing: 1.75px;
     text-transform: uppercase;
+    
 }
 
 .container {
@@ -20,6 +21,7 @@
 }
 .container2{
     display: flex;
+    margin-top: 10px;
 
 }
 
@@ -75,8 +77,11 @@
         display: none;
     }
     .container{
-        padding: 20px;
-       
+        padding: 10px; 
+        margin-top: 30px;
+    }
+    .card{
+        padding: 5px;
     }
     
     

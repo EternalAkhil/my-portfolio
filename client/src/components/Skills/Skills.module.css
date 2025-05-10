@@ -8,7 +8,7 @@
 }
 
 .container {
-    
+
     margin-top: 79px;
     margin-left: 10%;
     margin-right: 10%;
@@ -44,51 +44,64 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
 }
-.skillName{
+
+.skillName {
     font-weight: 700;
 }
 
 .skillsContainer div {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
-.skillsBanner{
-    width:35%;
+
+.skillsBanner {
+    width: 35%;
     animation-name: sliding;
     animation-duration: 4s;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-.skillsBanner img{
+
+.skillsBanner img {
     width: 100%;
 }
-@keyframes sliding{
-    0%{
+
+@keyframes sliding {
+    0% {
         transform: rotateZ(0deg);
     }
-    50%{
+
+    50% {
         transform: rotateZ(180deg);
     }
-    100%{
+
+    100% {
         transform: rotateZ(360deg);
     }
 }
-@media screen and (max-width:850px){
-    .container2{
+
+@media screen and (max-width:850px) {
+    .container2 {
         flex-direction: column-reverse;
         align-items: center;
         gap: 40px;
     }
-    .container h2{
+    .title{
         text-align: center;
     }
-    .imageContainer{
-        width: 60px;
-    height: 60px;
+    .container{
+        margin-top: 30px;
+    }
+
+    .imageContainer {
+        width: 65px;
+        height: 65px;
 
     }
+
     .imageContainer img {
-    width: 30px;
-}
+        width: 35px;
+    }
 }

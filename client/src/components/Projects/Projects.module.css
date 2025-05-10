@@ -29,6 +29,12 @@
     .sections h2{
         text-align: center;
     }
+    .sections{
+        margin-top: 30px;
+    }
+    .projects{
+        margin-top:32px;
+    }
     
     
 }
