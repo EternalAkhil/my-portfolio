@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Hero.module.css'
 import heroimage from '../../assets/images/hero.png'
 import pic from '../../assets/images/pic.png'
-import pic2 from '../../assets/images/hero2.jpg'
+// import pic2 from '../../assets/images/hero2.jpg'
 
 const Hero = () => {
   return (
