@@ -64,7 +64,7 @@
     align-items: center;
     z-index: 7;
     border-radius: 80%;
-    background-image: url('contact/hero2.png');
+    background-image: url('/contact/hero2.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
