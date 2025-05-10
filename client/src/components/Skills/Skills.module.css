@@ -1,0 +1,86 @@
+@import '../../vars.css';
+
+.container2 {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.container {
+    
+    margin-top: 79px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: var(--color-text);
+    font: var(--font-roboto);
+
+
+}
+
+.imageContainer {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imageContainer img {
+    width: 75px;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 1.75px;
+}
+
+.skillsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.skillName{
+    font-weight: 700;
+}
+
+.skillsContainer div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.skillsBanner{
+    width:35%;
+    animation-name: sliding;
+    animation-duration: 4s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+.skillsBanner img{
+    width: 100%;
+}
+@keyframes sliding{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(180deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+@media screen and (max-width:850px){
+    .container2{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+    }
+    .container h2{
+        text-align: center;
+    }
+}

@@ -1,0 +1,27 @@
+[
+    {
+      "title": "BookFind",
+      "imageSrc": "public/projects/project.png",
+      "description": "A full-stack web application to search books, add them to favorites, and receive recommendations based on preferred genres.",
+      "skills": ["React", "Express", "Node","MongoDB"],
+      "demo": "https://bookfind-frontend.onrender.com",
+      "source": "https://github.com/EternalAkhil/BookFind"
+    },
+    {
+      "title": "ResBuild",
+      "imageSrc": "public/projects/project.png",
+      "description": "A web-based application for creating professional and customizable resumes.",
+      "skills": ["HTML", "CSS", "JS"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    },
+    {
+      "title": "News Authencity Analyser",
+      "imageSrc": "public/projects/project.png",
+      "description": "A web interface system to detect fake news, developed using Machine Learning.Implemented Logistic Regression, Random Forest models for accurate predictions.",
+      "skills": ["React", "Python", "Flask","Node"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    }
+ ]
+  

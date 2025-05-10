@@ -1,0 +1,84 @@
+@import '../../vars.css';
+
+.title {
+    color: var(--color-text);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+}
+
+.container {
+    position: relative;
+    background-color: rgba(12, 12, 12, 0.6);
+    border-radius: 15px;
+    padding: 73px;
+    margin-top: 129px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.container2{
+    display: flex;
+
+}
+
+
+.skills {
+    color: var(--color-text);
+    font-family: var(--font-roboto);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.left img{
+    width: 40vw;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    padding: 25px;
+    background-image: linear-gradient(90deg,
+            rgba(165, 215, 232, 0.42) 0%,
+            rgba(255, 255, 255, 0) 100%);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+.card img{
+    width: 70px;
+    margin-right: 10px;
+}
+.card p{
+    white-space: normal;
+     word-wrap: break-word;
+}
+.card:hover {
+    background-size: 100% 100%;
+}
+.card div{
+    display: flex;
+    flex-direction: column;
+   
+}
+@media screen and (max-width:850px){
+    .container2 ,.container{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+
+    }
+    .left img{
+        display: none;
+    }
+    .container{
+        padding: 20px;
+       
+    }
+    
+    
+
+}
