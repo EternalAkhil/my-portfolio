@@ -7,18 +7,13 @@ import { useState } from 'react';
 
 
 const Projectcard = (props) => {
-    const [showdesc,setShowdesc] = useState(false)
+    const [showdesc, setShowdesc] = useState(false)
     return (
         <div className={styles.container} id="projects">
-            <div className={styles.image}><img src={props.project.imageSrc} alt={props.project.title} /></div>
+            <div className={styles.imagecontainer}> <img className={styles.image} src={props.project.imageSrc} alt={props.project.title} /></div>
+
             <h3 className={styles.title}>{props.project.title}</h3>
-            <div className={`${styles.description} ${showdesc?styles.show:styles.description}`}>
-                <p >{props.project.description}</p>
-                {showdesc?<FaAngleUp className={styles.arrow} onClick={()=>setShowdesc(!showdesc)}/>:<FaAngleDown className={styles.arrow} onClick={()=>setShowdesc(!showdesc)}/>}
-                
-            </div>
-
-
+                <p className={styles.description}>{props.project.description}</p>
             <ul>
                 {
                     props.project.skills.map((skill, id) => {

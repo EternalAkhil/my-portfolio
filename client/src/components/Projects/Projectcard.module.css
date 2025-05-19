@@ -3,17 +3,41 @@
 .container {
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+    background: linear-gradient(180deg, #6f7075 0%, #132a53 100%);
     box-shadow: 0 16px 14px 0 #04152d;
-    padding: 18px 18px;
-    max-width: 345px;
-    height: 550px;
-    overflow: hidden;   
+    width: 390px;
+    height: 600px;
+    overflow: hidden; 
+    padding: 1rem;  
+    position: relative;
 }
 .title {
     font-size: 25px;
     font-weight: 700;
+    margin-top: 1rem;   
+}
+.imagecontainer{
+    height: 230px;
+    overflow: hidden;
+  
+
+}
+.image{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.description {
+    margin-top: 6px;
+    font-size: 20px;
+    font-weight: 400;
+    line-break: anywhere;
+    height: 100px;
+    overflow: hidden;
+    
+    
 }
 
 .container ul {
@@ -21,48 +45,16 @@
     margin-top: 14px;
     display: flex;
     flex-direction: row;
-    
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 1rem;
     list-style: none;
 }
 
-.image img {
-    width: 100%;
-
-}
-
-.description {
-    margin-top: 6px;
-    font-size: 25px;
-    font-weight: 400;
-    height: 100px;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    padding: 2px;
-}
-.arrow{
-    position: absolute;
-    bottom: 0;
-    z-index: 2;
-
-}
-.show{
-    height: 100%;
-    box-shadow: none;
-    overflow:visible;
-    
-}
 .container ul li {
     font-size: 25px;
     font-weight: 400;
-    border-radius: 50px;
     background: var(--color-primary);
-    padding: 2px 22px;
+    padding: 2px 8px;
 }
 
 .container div a {
@@ -80,14 +72,16 @@
 }
 
 .container .links {
-    width: 100%;
-    margin-top: 26px;
+    position:absolute;
+    bottom: 1rem;
     display: flex;
-    gap: 1rem;
+    gap: 10rem;
+    margin-top: 26px;
+   
 }
 @media screen and (max-width:850px) {
     .container{
-        max-width: 100%;
+        width: 100%;
 
     }
 

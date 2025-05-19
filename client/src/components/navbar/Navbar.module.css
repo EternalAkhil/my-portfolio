@@ -29,6 +29,7 @@
 
 .title:hover {
     cursor: pointer;
+   
 }
 
 .sections {
@@ -43,6 +44,10 @@
 .sections a {
     text-decoration: none;
     color: var(--color-text);
+}
+.sections a:hover{
+     
+     color: yellow;
 }
 
 .ham {
@@ -63,6 +68,9 @@
 
     .ham {
         display: block;
+    }
+    .ham:gover{
+        cursor: pointer;
     }
 
     .sections {

@@ -1,7 +1,7 @@
 [
     {
       "title": "BookFind",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/book.jpeg",
       "description": "A full-stack web application to search books, add them to favorites, and receive recommendations based on preferred genres.",
       "skills": ["React", "Express", "Node","MongoDB"],
       "demo": "https://bookfind-frontend.onrender.com",
@@ -9,7 +9,7 @@
     },
     {
       "title": "ResBuild",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/resume.jpeg",
       "description": "A web-based application for creating professional and customizable resumes.",
       "skills": ["HTML", "CSS", "JS"],
       "demo": "https://www.example.com",

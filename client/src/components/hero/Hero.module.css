@@ -51,24 +51,31 @@
     padding: 17px 26px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
+.buttons{
+    display: flex;
+    gap: 1rem;
+}
+.contactBtn:hover{
+    cursor: pointer;
+    background-color: var(--color-secondary);
+
+}
 
 .left a {
     text-decoration: none;
     color: var(--color-text);
 }
 .right{
-
-    width: 20vw;
-    height: 70vh;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 7;
-    border-radius: 80%;
-    background-image: url('/contact/hero2.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+.right img{
+    width: 100%;
 }
 .right{
     z-index: 3;
@@ -129,12 +136,8 @@
 
     }
     .right{
-        background-position: center;
-        background-size: cover;
-        width: 200px;
-        height: 200px;
-        border-radius: 100%;
-        background-image: url('/contact/pic.png');
+        flex-direction: column-reverse;
+        width: 80%;
     }
     .title{
         font-size: 60px;
@@ -142,7 +145,13 @@
     .description{
         font-size: 20px;
     }
-    .contactBtn{
+    .buttons{
         align-self: center;
+    }
+    .contactBtn{
+        font-size: 20px;
+    font-weight: 600;
+    padding:1rem;
+
     }
 }

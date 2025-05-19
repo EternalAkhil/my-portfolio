@@ -57,7 +57,7 @@
 }
 
 .skillsBanner {
-    width: 35%;
+    width: 30%;
     animation-name: sliding;
     animation-duration: 4s;
     animation-timing-function: linear;
