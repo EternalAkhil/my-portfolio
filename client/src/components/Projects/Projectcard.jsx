@@ -22,7 +22,7 @@ const Projectcard = (props) => {
                 }
             </ul>
             <div className={styles.links}><a href={props.project.demo}>Demo</a>
-                <a href={props.project.source}>Git</a></div>
+                <a href={props.project.source}>Source</a></div>
 
         </div>
     )

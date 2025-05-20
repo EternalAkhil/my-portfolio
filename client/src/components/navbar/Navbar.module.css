@@ -91,7 +91,7 @@
 
     .sections li {
        width: 100%;
-        border-bottom:solid var(--color-bg);
+        border-bottom:solid blueviolet;
         text-align: center;
     }
 

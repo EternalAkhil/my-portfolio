@@ -55,6 +55,7 @@
     font-weight: 400;
     background: var(--color-primary);
     padding: 2px 8px;
+    border-radius: 10px;
 }
 
 .container div a {
@@ -75,7 +76,8 @@
     position:absolute;
     bottom: 1rem;
     display: flex;
-    gap: 10rem;
+    align-self: center;
+    gap: 1rem;
     margin-top: 26px;
    
 }
