@@ -5,10 +5,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 61px;
-    z-index: 2;
-    margin: 0% 5%;
+    padding: 32px 48px;
+    z-index: 10;
+    margin: 28px 4vw;
     position: relative;
+    background: rgba(30, 34, 90, 0.82);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    border-radius: 26px;
+    backdrop-filter: blur(14px);
+    border: 1.5px solid rgba(255,255,255,0.13);
+    transition: background 0.3s, box-shadow 0.3s;
 }
 
 .navbar .mobile {
@@ -22,9 +28,13 @@
 .title a {
     text-decoration: none;
     color: var(--color-text);
-
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    transition: color 0.2s;
+}
+.title a:hover {
+    color: var(--color-accent);
 }
 
 .title:hover {
@@ -35,19 +45,35 @@
 .sections {
     display: flex;
     list-style: none;
-    gap: 47px;
+    gap: 38px;
     color: var(--color-text);
-    font-size: 25px;
-
+    font-size: 22px;
+    padding: 0 18px;
+    border-radius: 16px;
+    background: rgba(25, 55, 109, 0.22);
+    box-shadow: 0 2px 16px 0 rgba(31, 38, 135, 0.09);
+    transition: background 0.3s;
 }
 
 .sections a {
     text-decoration: none;
     color: var(--color-text);
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    transition: 
+        color 0.2s,
+        background 0.2s,
+        box-shadow 0.2s;
+    position: relative;
+    z-index: 1;
 }
-.sections a:hover{
-     
-     color: yellow;
+.sections a:hover {
+    color: #ffda79;
+    background: rgba(255, 218, 121, 0.10);
+    box-shadow: 0 2px 12px rgba(255,218,121,0.13);
+    text-shadow: 0 2px 8px rgba(255,218,121,0.14);
 }
 
 .ham {
@@ -58,7 +84,13 @@
     .navbar {
         flex-direction: column;
         justify-content: flex-start;
-        padding: 10px;
+        padding: 18px 10px 10px 10px;
+        background: rgba(30, 34, 90, 0.90);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+        border-radius: 18px;
+        backdrop-filter: blur(10px);
+        border: 1.5px solid rgba(255,255,255,0.15);
+        margin: 12px 3vw;
     }
 
     .mobile {
@@ -68,9 +100,11 @@
 
     .ham {
         display: block;
-    }
-    .ham:gover{
         cursor: pointer;
+        transition: transform 0.2s;
+    }
+    .ham:hover {
+        transform: scale(1.14) rotate(8deg);
     }
 
     .sections {
@@ -78,29 +112,52 @@
         width: 100%;
         flex-direction: column;
         align-items: center;
-        gap: 13px;
-        border-radius: 10px;
-        background: rgb(25, 55, 109);
-        background: linear-gradient(0deg,
-                rgba(25, 55, 109, 0.2) 0%,
-                rgba(25, 55, 109, 1) 100%);
-        padding: 24px 33px;
-      
-
+        gap: 18px;
+        border-radius: 18px;
+        background: rgba(25, 55, 109, 0.78);
+        box-shadow: 0 4px 28px 0 rgba(31, 38, 135, 0.14);
+        padding: 28px 0 18px 0;
+        margin-top: 10px;
+        transition: all 0.3s cubic-bezier(.4,0,.2,1);
+        backdrop-filter: blur(8px);
     }
 
     .sections li {
-       width: 100%;
-        border-bottom:solid blueviolet;
+        width: 100%;
+        border-bottom: 1px solid rgba(138, 43, 226, 0.18);
         text-align: center;
+        padding: 12px 0;
+        transition: background 0.18s;
+        border-radius: 8px;
+    }
+    .sections li:last-child {
+        border-bottom: none;
+    }
+    .sections li:hover {
+        background: rgba(255,255,255,0.07);
+    }
+
+    .sections a {
+        color: var(--color-text);
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        transition: color 0.2s;
+        padding: 10px 0;
+        border-radius: 8px;
+    }
+    .sections a:hover {
+        color: #ffda79;
+        text-shadow: 0 2px 8px rgba(255,218,121,0.15);
+        background: rgba(255, 218, 121, 0.08);
     }
 
     .menuopen {
-        display: flex;
+        display: flex !important;
+        animation: fadeInMenu 0.35s cubic-bezier(.4,0,.2,1);
     }
 
-    
-
-
-
+    @keyframes fadeInMenu {
+        from { opacity: 0; transform: translateY(-20px);}
+        to { opacity: 1; transform: translateY(0);}
+    }
 }

@@ -3,38 +3,51 @@
 .sections {
     margin-top: 76px;
     color: var(--color-text);
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 7vw;
+    margin-right: 7vw;
     display: flex;
     flex-direction: column;
+    background: rgba(30, 34, 90, 0.85);
+    border-radius: 28px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.13);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.10);
+    padding: 54px 32px 40px 32px;
+}
 
-        color: var(--color-text);
-    }
 .title {
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1.75px;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: 2px;
     text-transform: uppercase;
-  }
-.projects{
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.projects {
     margin-top: 37px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    gap: 15px;
+    gap: 32px;
     width: 100%;
 }
+
 @media screen and (max-width:850px) {
-    .sections h2{
-        text-align: center;
-    }
-    .sections{
+    .sections {
         margin-top: 30px;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        padding: 18px 4vw 18px 4vw;
     }
-    .projects{
-        margin-top:32px;
+    .title {
+        font-size: 24px;
+        margin-bottom: 1em;
     }
-    
-    
+    .projects {
+        margin-top: 24px;
+        gap: 16px;
+    }
 }
