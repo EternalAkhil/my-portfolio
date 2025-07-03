@@ -1,89 +1,140 @@
 @import '../../vars.css';
 
 .title {
-    color: var(--color-text);
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1.75px;
+color: white;
+    font-size: 2.1rem;
+    font-weight: 800;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    
+    text-align: center;
+    margin-bottom: 2.2em;
+    text-shadow: 0 2px 24px rgba(123,108,246,0.13);
 }
 
 .container {
     position: relative;
-    background-color: rgba(12, 12, 12, 0.6);
-    border-radius: 15px;
-    padding: 73px;
-    margin-top: 129px;
+    background-color: rgba(12, 12, 12, 0.6); /* unchanged */
+    border-radius: 22px;
+    padding: 56px 32px 40px 32px;
+    margin-top: 80px;
     z-index: 1;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    box-shadow: 0 8px 32px 0 rgba(123,108,246,0.10);
+    overflow: hidden;
 }
-.container2{
+
+.container2 {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+    width: 100%;
     margin-top: 10px;
-
 }
 
+.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left img,
+.imgWrapper img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 16px 0 rgba(123,108,246,0.10);
+    background: rgba(123,108,246,0.10);
+    padding: 0.5rem;
+}
 
 .skills {
     color: var(--color-text);
     font-family: var(--font-roboto);
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
+    flex: 2;
+}
 
-}
-.left img{
-    width: 40vw;
-}
 .card {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 20px;
-    padding: 25px;
-    background-image: linear-gradient(90deg,
-            rgba(165, 215, 232, 0.42) 0%,
-            rgba(255, 255, 255, 0) 100%);
-    background-size: 0 100%;
-    background-repeat: no-repeat;
-    transition: 0.4s;
-}
-.card img{
-    width: 70px;
-    margin-right: 10px;
-}
-.card p{
-    white-space: normal;
-     word-wrap: break-word;
+    align-items: flex-start;
+    gap: 1.3rem;
+    background: rgba(255,255,255,0.04);
+    border-radius: 18px;
+    box-shadow: 0 2px 12px 0 rgba(123,108,246,0.08);
+    padding: 1.2rem 1.5rem;
+    transition: box-shadow 0.2s, background 0.2s, transform 0.18s;
+    border: 1.5px solid rgba(255,255,255,0.10);
 }
 .card:hover {
-    background-size: 100% 100%;
+    background: rgba(123,108,246,0.13);
+    box-shadow: 0 8px 24px 0 rgba(123,108,246,0.13);
+    transform: translateY(-4px) scale(1.025);
+    border: 1.5px solid var(--color-primary);
 }
-.card div{
+
+.card img,
+.iconCircle img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(123,108,246,0.18) 60%, rgba(255,218,121,0.13) 100%);
+    box-shadow: 0 2px 8px 0 rgba(123,108,246,0.10);
+    padding: 0.3rem;
+}
+
+.card h3 {
+    margin: 0 0 0.3rem 0;
+    font-size: 1.15rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 1.01rem;
+    color: var(--color-text);
+    opacity: 0.93;
+    line-height: 1.5;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.card div {
     display: flex;
     flex-direction: column;
-   
 }
-@media screen and (max-width:850px){
-    .container2 ,.container{
+
+@media screen and (max-width:850px) {
+    .container2, .container {
         display: flex;
         flex-direction: column;
-        align-items: center; 
-
+        align-items: center;
     }
-    .left img{
-        display: none;
+    .left img,
+    .imgWrapper img {
+        width: 140px;
+        height: 140px;
+        padding: 0.2rem;
     }
-    .container{
-        padding: 10px; 
+    .container {
+        padding: 10px;
         margin-top: 30px;
     }
-    .card{
-        padding: 5px;
+    .card {
+        padding: 10px;
+        gap: 0.7rem;
     }
-    
-    
-
+    .skills {
+        gap: 1rem;
+    }
 }

@@ -12,33 +12,43 @@ const About = () => {
       <h1 className={styles.title}>About</h1>
       <div className={styles.container2} >
         <div className={styles.left}>
-          <img src={aboutimg} alt="aboutimg" />
+          <div className={styles.imgWrapper}>
+            <img src={aboutimg} alt="aboutimg" className={styles.aboutImg} />
+          </div>
         </div>
         <div className={styles.skills}>
           <div className={styles.card}>
-            <img src={cursoricon} alt="cursor icon" />
-            <div>
-              <h3>Front-End developer</h3>
-              <p>I'm a frontend developer with experience in building responsive
-                and optimized sites</p>
+            <div className={styles.iconCircle}>
+              <img src={cursoricon} alt="cursor icon" />
             </div>
-
+            <div>
+              <h3>Front-End Developer</h3>
+              <p>
+                I craft responsive, accessible, and visually engaging web interfaces using modern frameworks and best practices.
+              </p>
+            </div>
           </div>
           <div className={styles.card}>
-            <img src={servericon} alt="cursor icon" />
-            <div>
-              <h3>Back-End developer</h3>
-              <p>I can build fast and secure APIs using nodeJS and expressJS.</p>
+            <div className={styles.iconCircle}>
+              <img src={servericon} alt="server icon" />
             </div>
-
+            <div>
+              <h3>Back-End Developer</h3>
+              <p>
+                I build fast, secure APIs and scalable server-side logic with Node.js, Express, and database integrations.
+              </p>
+            </div>
           </div>
           <div className={styles.card}>
-          <img src={dataicon} alt="server icon" />
-            <div>
-            <h3>Data Scientist</h3>
-              <p>Expert in data analysis and statistics. Can build ML projects to gain valuable insights from data</p>
+            <div className={styles.iconCircle}>
+              <img src={dataicon} alt="data icon" />
             </div>
-            
+            <div>
+              <h3>Data Scientist</h3>
+              <p>
+                I analyze data, build ML models, and extract insights to drive smarter decisions and innovative solutions.
+              </p>
+            </div>
           </div>
         </div>
 

@@ -3,38 +3,55 @@
 .sections {
     margin-top: 76px;
     color: var(--color-text);
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 7vw;
+    margin-right: 7vw;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(120deg, rgba(30,34,90,0.92) 60%, rgba(123,108,246,0.13) 100%);
+    border-radius: 36px;
+    box-shadow: 0 12px 48px 0 rgba(123,108,246,0.13), 0 1.5px 8px 0 rgba(255,218,121,0.04);
+    backdrop-filter: blur(16px);
+    border: 1.5px solid rgba(255,255,255,0.10);
+    padding: 64px 40px 48px 40px;
+    position: relative;
+    overflow: hidden;
+}
 
-        color: var(--color-text);
-    }
 .title {
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1.75px;
+    font-size: 2.3rem;
+    font-weight: 900;
+    letter-spacing: 2px;
     text-transform: uppercase;
-  }
-.projects{
+ 
+    text-align: center;
+    margin-bottom: 2em;
+    text-shadow: 0 2px 24px rgba(123,108,246,0.13);
+}
+
+.projects {
     margin-top: 37px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    gap: 15px;
+    gap: 32px;
     width: 100%;
 }
+
 @media screen and (max-width:850px) {
-    .sections h2{
-        text-align: center;
-    }
-    .sections{
+    .sections {
         margin-top: 30px;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        padding: 24px 2vw 24px 2vw;
+        border-radius: 22px;
     }
-    .projects{
-        margin-top:32px;
+    .title {
+        font-size: 1.3rem;
+        margin-bottom: 1em;
     }
-    
-    
+    .projects {
+        margin-top: 24px;
+        gap: 16px;
+    }
 }

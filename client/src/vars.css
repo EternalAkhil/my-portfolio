@@ -1,12 +1,13 @@
 :root {
     /* Colours */
-    --color-text: #fff;
-    --color-primary: #576cbc;
-    --color-secondary: #19376d;
+    --color-text: #f5f6fa;
+    --color-primary: #7b5cff;
+    --color-secondary: #232946;
+    --color-accent: #ffda79;
     --color-dark: #0b2447;
-    --color-bg: #04152d;
+    --color-bg: #181c2f;
   
     /* Fonts */
-    --font-roboto: "Roboto";
+    --font-main: 'Poppins', 'Roboto', Arial, sans-serif;
+    --font-roboto: 'Roboto', Arial, sans-serif;
   }
-  

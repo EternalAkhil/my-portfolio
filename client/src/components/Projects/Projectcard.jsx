@@ -1,29 +1,28 @@
 import React from 'react'
 import styles from './Projectcard.module.css'
-import { FaArrowDown, FaChevronDown, FaAngleDown } from "react-icons/fa";
-import { FaArrowUp, FaChevronUp, FaAngleUp } from "react-icons/fa";
-
-import { useState } from 'react';
-
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const Projectcard = (props) => {
-    const [showdesc, setShowdesc] = useState(false)
     return (
-        <div className={styles.container} id="projects">
-            <div className={styles.imagecontainer}> <img className={styles.image} src={props.project.imageSrc} alt={props.project.title} /></div>
-
+        <div className={styles.container}>
+            <div className={styles.imagecontainer}>
+                <img className={styles.image} src={props.project.imageSrc} alt={props.project.title} />
+            </div>
             <h3 className={styles.title}>{props.project.title}</h3>
-                <p className={styles.description}>{props.project.description}</p>
-            <ul>
-                {
-                    props.project.skills.map((skill, id) => {
-                        return <li key={id}>{skill}</li>
-                    })
-                }
+            <p className={styles.description}>{props.project.description}</p>
+            <ul className={styles.skillList}>
+                {props.project.skills.map((skill, id) => (
+                    <li className={styles.skillItem} key={id}>{skill}</li>
+                ))}
             </ul>
-            <div className={styles.links}><a href={props.project.demo}>Demo</a>
-                <a href={props.project.source}>Source</a></div>
-
+            <div className={styles.links}>
+                <a href={props.project.demo} target="_blank" rel="noopener noreferrer">
+                    <FaExternalLinkAlt /> Demo
+                </a>
+                <a href={props.project.source} target="_blank" rel="noopener noreferrer">
+                    <FaGithub /> Source
+                </a>
+            </div>
         </div>
     )
 }
