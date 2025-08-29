@@ -1,20 +1,13 @@
 [
     {
       "title": "BookRepo",
-      "imageSrc": "projects/book.jpeg",
-      "description": "A full-stack AI-integrated web application for personalized book management, summarization, and recommendations.",
+      "imageSrc": "projects/1.png",
+      "description": "BookRepo is your complete reading management platform. Discover and organize books, get AI-powered summaries and personalized recommendations, and chat with Merlin, your built-in literary assistant. Everything you need to enhance your reading journey, all in one place.",
       "skills": ["React", "Express", "Node","MongoDB","GenAI"],
       "demo": "http://bookrepo-silk.vercel.app",
       "source": "https://github.com/EternalAkhil/bookrepo"
     },
-    {
-      "title": "ResBuild",
-      "imageSrc": "projects/resume.jpeg",
-      "description": "A web-based application for creating professional and customizable resumes.",
-      "skills": ["HTML", "CSS", "JS"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    },
+   
     {
       "title": "News Authencity Analyser",
       "imageSrc": "projects/project.png",
@@ -22,6 +15,47 @@
       "skills": ["React", "Python", "Flask","Node"],
       "demo": "https://www.example.com",
       "source": "https://github.com/EternalAkhil/fakenewsdetection"
+    },
+     {
+      "title": "ResBuild",
+      "imageSrc": "projects/resume.jpeg",
+      "description": "A web-based application for creating professional and customizable resumes.",
+      "skills": ["HTML", "CSS", "JS"],
+      "demo": "https://eternalakhil.github.io/resbuild/",
+      "source": "https://github.com/EternalAkhil/resbuild"
+    },
+    {
+      "title": "Meme-generator",
+      "imageSrc": "projects/s1.png",
+      "description": "A fun little web app where users can click a button to generate random memes, jokes, and riddles. ",
+      "skills": ["HTML","CSS","JS"],
+      "demo": "https://eternalakhil.github.io/meme-generator/",
+      "source": "https://github.com/EternalAkhil/meme-generator/tree/main"
+    },
+     {
+      "title": "WeatherApp",
+      "imageSrc": "projects/s2.png",
+      "description": "Find your cities weather condition,humidity and windspeed.",
+      "skills": ["HTML","CSS","JS"],
+      "demo": "https://eternalakhil.github.io/WeatherApp/",
+      "source": "https://github.com/EternalAkhil/WeatherApp"
+    },
+    {
+      "title": "To-do-App",
+      "imageSrc": "projects/s3.png",
+      "description": "Manage your daily tasks using this simple web application.",
+      "skills": ["HTML","CSS","JS"],
+      "demo": "https://to-do-list-dhh8.vercel.app/",
+      "source": "https://github.com/EternalAkhil/To-do-List"
+    },
+    {
+      "title": "EmailSpamDetector",
+      "imageSrc": "projects/s4.png",
+      "description": "This app classifies an email or sms as spam or ham. I have used MultinomialNB algorithm to classify emails. Provided a simple and clean streamlit interface .",
+      "skills": ["ML","Flask","Streamlit","NLP"],
+      "demo": "https://eternalakhil-spamdetector-app-kin0mo.streamlit.app/",
+      "source": "https://github.com/EternalAkhil/Spamdetector"
     }
+
  ]
   

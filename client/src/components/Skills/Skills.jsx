@@ -10,17 +10,31 @@ const Skills = () => {
       <div className={styles.container2}>
         <div className={styles.skillsContainer}>
           {skills.map((item, id) => (
-            <div key={id} className={styles.skillCard}>
-              <div className={styles.imageContainer}>
-                <img src={item.imageSrc} alt={item.title} />
+            <div key={id} className={styles.skillMainCard} >
+              <h3>{item.name}</h3>
+              <div className={styles.skillCard}>
+                {item.skills.map((skill, id) => (
+                <div className={styles.oneskillcard}>
+                  <div className={styles.imageContainer}>
+
+                    <img src={skill.imageSrc} alt={skill.title} />
+                  </div>
+                  <p className={styles.skillName}>{skill.title}</p>
+                </div>
+
+
+              ))}
+
               </div>
-              <p className={styles.skillName}>{item.title}</p>
+              
+
+
             </div>
           ))}
         </div>
-        <div className={styles.skillsBanner}>
+        {/* <div className={styles.skillsBanner}>
           <img src={skillimg} alt="skill banner" />
-        </div>
+        </div> */}
       </div>
     </section>
   )

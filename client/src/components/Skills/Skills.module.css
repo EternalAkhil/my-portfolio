@@ -1,14 +1,9 @@
 @import '../../vars.css';
 
-.container2 {
-    display: flex;
-    margin-top: 2rem;
-    justify-content: space-around;
-    text-align: center;
-}
+
 
 .container {
-
+ 
     margin-top: 79px;
     margin-left: 10%;
     margin-right: 10%;
@@ -18,6 +13,67 @@
 
 }
 
+
+
+.title {
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 1.75px;
+    text-align: center;
+    margin-bottom: 1rem;
+   
+}
+
+.skillsContainer {
+
+    display: grid;
+   
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    gap: 1.2rem;
+    width: 100%;
+    max-width: 650px;
+   
+    position: relative;
+    z-index: 1;
+}
+
+.skillMainCard{
+    text-align: center;
+ 
+    background: rgba(123, 108, 246, 0.13);
+    border: 1.5px solid var(--color-primary);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px 0 rgba(123,108,246,0.10);
+    padding: 2rem 1.2rem 1.2rem 1.2rem;
+    margin-bottom: 1.5rem;
+    transition: 
+        background 0.22s cubic-bezier(.4,0,.2,1),
+        box-shadow 0.22s cubic-bezier(.4,0,.2,1),
+        transform 0.15s,
+        border 0.18s;
+    cursor: pointer;
+}
+.skillMainCard:hover {
+    background: rgba(123, 108, 246, 0.22);
+    box-shadow: 0 12px 32px 0 rgba(123, 108, 246, 0.18), 0 1.5px 8px 0 rgba(255,218,121,0.08);
+    transform: translateY(-8px) scale(1.045) rotate(-2deg);
+    border: 1.5px solid var(--color-accent);
+}
+
+.skillCard{
+    display:grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 0.7rem;
+    margin-top: 1rem;
+}
+.oneskillcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .imageContainer {
     width: 120px;
     height: 120px;
@@ -33,30 +89,18 @@
     width: 75px;
 }
 
-.title {
-    font-size: 35px;
-    font-weight: 800;
-    letter-spacing: 1.75px;
-    text-align: center;
-   
-}
-
-.skillsContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2rem;
-}
-
 .skillName {
     font-weight: 700;
+    font-size: 1.08em;
+    color: var(--color-primary);
+    letter-spacing: 0.7px;
+    margin-top: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
-.skillsContainer div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
+
 
 .skillsBanner {
     display: flex;
@@ -90,7 +134,7 @@
 @media screen and (max-width:850px) {
     .container2 {
         flex-direction: column-reverse;
-        align-items: center;
+        /* align-items: center; */
         gap: 40px;
     }
     .title{
@@ -98,6 +142,7 @@
     }
     .container{
         margin-top: 30px;
+        margin: 5%;
     }
 
     .imageContainer {
@@ -110,14 +155,27 @@
         width: 35px;
     }
 
-    .skillsBanner {
-        margin: 2rem auto 0 auto;
-        max-width: 140px;
-        min-width: 80px;
-        width: 100px;
-        padding: 0.5rem;
+  
+    .skillsContainer {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        max-width: 100%;
     }
-    .skillsBanner img {
+    .skillMainCard {
+        padding: 1rem 0.5rem 0.5rem 0.5rem;
         border-radius: 12px;
+        margin-bottom: 1rem;
+      
     }
+    .skillCard {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+    
+.skillName {
+    font-weight: 400;
+    font-size: 1em;
+
+    letter-spacing: 1px;
+}
 }
